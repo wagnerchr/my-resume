@@ -1,8 +1,8 @@
 
 
-// Copy Button text -> email
-function copyText(a) {
-  navigator.clipboard.writeText(a.textContent)
+// Copy Email Button
+function copyText(button) {
+  navigator.clipboard.writeText(button.textContent)
   .then(function() {
     const copyAlert = document.createElement("div");
     copyAlert.textContent = "Copied text!";
@@ -10,26 +10,27 @@ function copyText(a) {
     copyAlert.style.color = "white";
     copyAlert.style.padding = "10px";
     copyAlert.style.position = "fixed";
-    copyAlert.style.top = "50%";
-    copyAlert.style.left = "50%";
+
+  // Taking button position
+    const buttonPosition = button.getBoundingClientRect();
+    copyAlert.style.top = buttonPosition.top + "px";
+    copyAlert.style.left = buttonPosition.left + "px";
+
     copyAlert.style.transform = "translate(-50%, -50%)";
     copyAlert.style.zIndex = "9999";
     copyAlert.style.fontFamily = "Arial";
     copyAlert.style.fontSize = "16px";
     document.body.appendChild(copyAlert);
+
     setTimeout(function() {
       document.body.removeChild(copyAlert);
     }, 2000);
-  }).catch(function() {
-    console.log("Não foi possível copiar o texto.");
-  });
-
+  })
 }
 
-
-const words = ['Amo a Isabella <3', 'Back-End Developer', 'Love programming <3', 'Sei lá kkk', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'Back-End Developer'];
+// Typing Div
+const words = ['Back-End Developer', 'Always Improving', 'NodeJs Developer'];
 const text = document.querySelector('.word');
-
 const typeWords = async () => {
   let i = 0;
   let texto = ''
@@ -56,7 +57,7 @@ const typeWords = async () => {
     for(let k = 0; k < word.length; k++) {
       texto = texto.slice(0, -1)
       text.innerHTML = texto + (text.textContent.endsWith(codeBar) ? '' : codeBar);
-      await new Promise(r => setTimeout(r, 200));
+      await new Promise(r => setTimeout(r, 100));
     }
   }
 
@@ -64,7 +65,7 @@ const typeWords = async () => {
     await printWord(words[i]);
     await new Promise(r => setTimeout(r, 3000));
     await removeWord(words[i])
-    await new Promise(r => setTimeout(r, 200));
+    await new Promise(r => setTimeout(r, 800));
     i == words.length - 1 ? i = - 1 : i = i;
   }
 };
