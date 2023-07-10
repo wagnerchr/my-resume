@@ -29,7 +29,7 @@ function copyText(button) {
 }
 
 // Typing Div
-const words = ['Back-End Developer', 'Always Improving', 'NodeJs Developer'];
+const words = ['Back-End Developer', 'NodeJs Developer'];
 const text = document.querySelector('.word');
 const typeWords = async () => {
   let i = 0;

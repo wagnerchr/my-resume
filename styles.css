@@ -47,7 +47,15 @@ header {
 }
 
 .background-img {
-  background: radial-gradient(#58748b,#1c3753);
+  background-image: url('/assets/images/background.jpg');
+  /* background: radial-gradient(#58748b,#1c3753); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.background-color {
+  background: radial-gradient(rgba(88, 116, 139, 0.8), rgba(28, 55, 83, 0.2));
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
