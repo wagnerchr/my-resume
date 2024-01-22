@@ -68,4 +68,8 @@ const typeWords = async () => {
   }
 };
 
+const scrollDown = () => {
+  window.scrollBy(0, 0.9 * window.innerHeight);
+}
+
 typeWords();
