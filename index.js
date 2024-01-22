@@ -1,5 +1,3 @@
-
-
 // Copy Email Button
 function copyText(button) {
   navigator.clipboard.writeText(button.textContent)

@@ -23,23 +23,17 @@ body {
   -- Header -- 
 */
 header {
-  /* background-color: rgba(100, 100, 100, 0.5); 
-  box-shadow: 0px 10px 10px rgba(100, 100, 100, 0.5); */
   height: 120px;
-  margin-bottom: 50px;
-
 }
 
 .header-name {
   display: flex;
   width: 180px;
   height: 60px;
-
   top: 50%;
   align-items: center;
   justify-content: center;
   font-weight: 900;
-
 }
 
 .header-name h1{
@@ -52,10 +46,6 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-
-  /* box-shadow: 0 20px 200px 0px rgba(0, 0, 0, 0.9); */
-
-  /* transition: background 1.5s linear; */
 }
 
 .background-img:after {
@@ -65,7 +55,9 @@ header {
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0), #3a5364 90%);
+  /* background-image: linear-gradient(to bottom, rgba(255,255,255,0), #3a5364 90%); */
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), #3C3E42
+  90%);
   width: 100%;
   height: 4em;
 }
@@ -75,8 +67,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  /* box-shadow: -10 20px 20px 0px rgba(0, 0, 0, 0.5); */
-
 }
 
 /* 
@@ -94,30 +84,44 @@ main {
 .banner {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 490px;
+
   padding: 15px;
+  text-align: center;
   align-items: center;
 }
 
 .banner word-div {
   justify-content: start;
   align-items: start;
+  text-align: start;
 }
 
 .banner-title {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.banner h6 {
+.banner-title h6 {
   font-weight: 600;
   font-size: 40px;
-  margin-left: 3px;
+  display: inline-block;
+  margin: -2.6px;
+  text-align: start;
 }
 
-.banner  h1 {
+.banner-title  h1 {
   font-weight: 600;
   font-size: 92px;
+  margin-left: -6.6px;
+  display: inline-block;
+}
+
+.word {
+  margin-left: -2px;
+  text-align: start;
+
 }
 
 .hand {
@@ -151,21 +155,35 @@ main {
   text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
-.social-links {
-  width: 620px;
+.button-beside {
+  width: 50px;
+  height: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 30px;
+  position: absolute;
+  margin-top: 300px;
 }
 
+/* Logos */
 .social-logos {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social-logos .social-logo {
+  justify-content: space-between;
 }
 
 .social-logo {
   width: 50px;
   height: 50px;
-  margin: 10px;
 }
 
 .social-logo img {
@@ -198,6 +216,12 @@ main {
 .email-link:hover {
   transform: scale(1.1);
 }
+
+
+
+
+
+
 
 
 
@@ -294,28 +318,32 @@ main {
 /*
   -- Section Langs --
 */
+
 .langs-section {
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: 80vh;
   width: 100%;
   align-items: center;
-  background-color: #3a5364;
+  background-image: linear-gradient(to bottom, #3C3E42 0%, #171719 80%);
   z-index: -1;
 }
 
 .langs-section h1 {
   font-size: 32px;
   height: auto;
-  margin: 86px;
+  margin-bottom: 55px;
+}
+
+.langs {
+  z-index: -100;
 }
 
 .langs-div {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: black;
   border-radius: 20px;
 }
 
@@ -325,16 +353,16 @@ main {
   width: 850px;
   height: 100%;
   justify-content: center;
-
 }
 
 .lang-logo {
   width: 100px;
   height: 100px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .lang-logo img {
+  width: 60px;
   max-width:100%;
   max-height:100%;
   object-fit: cover;
@@ -345,4 +373,3 @@ main {
 .lang-logo img:hover {
   transform: scale(1.1);
 }
-  
