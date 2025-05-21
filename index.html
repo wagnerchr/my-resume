@@ -1,124 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <title>wagnerchr</title>
+  </head>
 
-  <title>wagnerchr</title>
-</head>
-
-<body>
-  <div class="background-img">
-    <div class="background-color">
-      <header>
-        <div class="header-name">
-          <h1>
-            wagnerchr
-          </h1>
-        </div>
-      </header>
-      <div class="container">
-        <!-- Banner, main section -->
-        <main>
-          <div class="banner">
-              <div class="banner-title">
-                <h6>Hello, World!</h6>
-                <h1>I'm Wagner</h1>
-                <!-- Campo para animação do texto escrito  -->
-                <div class="word-div">
-                  <div class="word"></div>
-                </div>
-              </div>  
-              <!-- Div com informações de contato -->
-              <!-- <div class="social-logos">
-                <div class="social-logo"> 
-                  <a href="https://www.linkedin.com/in/wagnerchristos/" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
-                  </a>
-                </div>
-                <div class="social-logo">  
-                  <a href="https://github.com/wagnerchr" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                  </a>    
-                </div>
-                <button class="email-link" onclick="copyText(this)"> wagnerchr.dev@gmail.com  </button>
-              </div>  -->
-              <div class="button-beside" onclick="scrollDown()">↓</div>
+  <body>
+    <div class="background-img">
+      <div class="background-color">
+        <header>
+          <div class="header-name">
+            <h1>wagnerchr</h1>
           </div>
-        </main>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#experience">Experiência</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="language-selector">
+            <div class="language-icon">🌐</div>
+            <select id="language-select" aria-label="Selecionar Idioma">
+              <option value="pt">🇧🇷 Português</option>
+              <option value="en">🇺🇸 English</option>
+              <option value="es">🇪🇸 Español</option>
+              <option value="fr">🇫🇷 Français</option>
+            </select>
+          </div>
+        </header>
+        <div class="container">
+          <!-- MAIN SESSION -->
+          <main>
+            <div class="banner">
+              <div class="banner-title">
+                <h6>Hello, I'm Wagner</h6>
+                <div class="word-div">
+                  <div class="word notranslate"></div>
+                </div>
+                <p class="">
+                  Desenvolvedor de software full stack. Como profissional meu
+                  foco é criar soluções completas e eficientes
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container langs">
-    <section class="langs-section">
-      <div class="langs-div">
-        <div>
-        <h1> Langs</h1>
+
+    <div class="wave-divider"></div>
+    <section class="content-section" id="about">
+      <h1 class="content-title">Sobre Mim</h1>
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="assets/images/eu.png"
+            alt="Wagner Christos"
+            class="profile-image"
+          />
         </div>
-        <div class="lang-logos">
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />     
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />       
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" />
-          </div>
-          <div class="lang-logo">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
-          </div>
-        </div> 
-      </div>
-    </section> 
-  </div>
-    <section class="projects-section">
-      <div class="projects-div">
-        <div>
-        <h1> Projects </h1>
+        <div class="about-text">
+          <p>
+            Olá! Sou Wagner Christos, desenvolvedor full stack apaixonado por
+            criar soluções tecnológicas eficientes e inovadoras.
+          </p>
+          <p>
+            Com experiência em desenvolvimento web utilizando tecnologias
+            modernas como React, Node.js, TypeScript e diversos frameworks,
+            busco constantemente aprender e aplicar as melhores práticas de
+            programação.
+          </p>
+          <p>
+            Graduado em Análise e Desenvolvimento de Sistemas, possuo forte
+            conhecimento em arquiteturas de software, bancos de dados e
+            desenvolvimento ágil.
+          </p>
+          <p>
+            Sou movido por desafios e acredito que a tecnologia tem o poder de
+            transformar o mundo para melhor.
+          </p>
         </div>
-        <div class="projects-logos">
-            <div class="projects-logo">
-              <img src="https://play-lh.googleusercontent.com/1oj_08zk0QqdS84NVNMkrBtlHa05SLXSFJO_k0UrhFS17xusWDMdLMfVfjzJLa-NkeKR" />
-            </div>
-            <div class="projects-logo">
-              <img src="assets/images/saeg_resized.webp" />
-            </div>
-        </div> 
       </div>
-    </section> 
-    <section class="contact-section">
-      <div class="contact-div">
-      
-      </div> 
-      <div>Todos os direitos reservados </div>
-    </section> 
-  <script src="index.js"> </script>
-</body>
+    </section>
+    <section class="content-section" id="projects">
+      <h1 class="content-title">Projetos Pessoais</h1>
+      <h2 class="subtitle-tech">Linguagens & Tecnologias</h2>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              alt="HTML5"
+            />
+            <p>HTML5</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              alt="CSS3"
+            />
+            <p>CSS3</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+              alt="TypeScript"
+            />
+            <p>TypeScript</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
+            <p>React</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+              alt="Node.js"
+            />
+            <p>Node.js</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+              alt="NestJS"
+            />
+            <p>NestJS</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java"
+            />
+            <p>Java</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+              alt="Spring"
+            />
+            <p>Spring</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+              alt="Vue.js"
+            />
+            <p>Vue.js</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.quasar.dev/logo-v2/svg/logo.svg"
+              alt="Quasar"
+            />
+            <p>Quasar</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              alt="Next.js"
+            />
+            <p>Next.js</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/adonisjs/adonisjs-original.svg"
+              alt="AdonisJS"
+            />
+            <p>AdonisJS</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+            />
+            <p>MongoDB</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
+              alt="PostgreSQL"
+            />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+              alt="SQL Server Management Studio"
+            />
+            <p>SSMS</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
+              alt="Docker"
+            />
+            <p>Docker</p>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <p>Git</p>
+          </div>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="https://github.com/user-attachments/assets/cac78c81-bc21-41d7-9244-11403c6fec0c"
+            class="project-image"
+            alt="Quasar CRUD"
+          />
+          <h3 class="project-title">
+            <a href="https://github.com/wagnerchr/quasar-crud" target="_blank"
+              >Quasar CRUD</a
+            >
+          </h3>
+          <p class="project-description">
+            Aplicação CRUD moderna desenvolvida com Vue.js e Quasar Framework,
+            oferecendo uma interface elegante e responsiva.
+          </p>
+          <div class="tech-stack">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+              class="tech-icon"
+              alt="Vue.js"
+            />
+            <img
+              src="https://cdn.quasar.dev/logo-v2/svg/logo.svg"
+              class="tech-icon"
+              alt="Quasar"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+              class="tech-icon"
+              alt="TypeScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+              class="tech-icon"
+              alt="Node.js"
+            />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="assets/images/pixelart.gif"
+            class="project-image"
+            alt="My Resume"
+          />
+          <h3 class="project-title">
+            <a href="https://github.com/wagnerchr/my-resume" target="_blank"
+              >My Resume</a
+            >
+          </h3>
+          <p class="project-description">
+            Portfolio responsivo desenvolvido com HTML5, CSS3 e JavaScript,
+            apresentando experiências profissionais e habilidades técnicas com
+            suporte a múltiplos idiomas.
+          </p>
+          <div class="tech-stack">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="tech-icon"
+              alt="HTML5"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="tech-icon"
+              alt="CSS3"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="tech-icon"
+              alt="JavaScript"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section" id="experience">
+      <h1 class="content-title">Experiência Profissional</h1>
+      <div class="experiences-grid">
+        <div class="experience-card">
+          <h3 class="experience-title">
+            Desenvolvedor Full Stack na
+            <a
+              href="https://athoslabs.com.br/"
+              target="_blank"
+              class="company-link athos"
+              >Athos Labs</a
+            >
+          </h3>
+          <p class="experience-description">
+            Desenvolvimento e manutenção de aplicações web modernas e
+            escaláveis, utilizando arquitetura de microsserviços e metodologias
+            ágeis.
+          </p>
+          <div class="tech-stack">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="tech-icon"
+              alt="JavaScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+              class="tech-icon"
+              alt="TypeScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+              class="tech-icon"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+              class="tech-icon"
+              alt="Vue.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/adonisjs/adonisjs-original.svg"
+              class="tech-icon"
+              alt="AdonisJS"
+            />
+            <img
+              src="https://cdn.quasar.dev/logo-v2/svg/logo.svg"
+              class="tech-icon"
+              alt="Quasar"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
+              class="tech-icon"
+              alt="PostgreSQL"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
+              class="tech-icon"
+              alt="Docker"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              class="tech-icon"
+              alt="Git"
+            />
+          </div>
+        </div>
+        <div class="experience-card">
+          <h3 class="experience-title">
+            Desenvolvedor Full Stack na
+            <a
+              href="https://puah.com.br/"
+              target="_blank"
+              class="company-link puah"
+              >Puah Consultoria</a
+            >
+          </h3>
+          <p class="experience-description">
+            Desenvolvimento de aplicações web completas, desde o backend até o
+            frontend, utilizando tecnologias modernas e práticas ágeis.
+          </p>
+          <div class="tech-stack">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+              class="tech-icon"
+              alt="TypeScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+              class="tech-icon"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              class="tech-icon"
+              alt="React"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+              class="tech-icon"
+              alt="NestJS"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              class="tech-icon"
+              alt="Next.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+              class="tech-icon"
+              alt="SSMS"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              class="tech-icon"
+              alt="Git"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section" id="contact">
+      <h1 class="content-title">Entre em Contato</h1>
+      <div class="contact-container">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu-email@exemplo.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Assunto da mensagem"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Digite sua mensagem aqui..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar Mensagem</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="contact-icon">📧</i>
+            <p>wagnerchr.dev@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="contact-icon">📱</i>
+            <p>+55 (12) 98892-6804</p>
+          </div>
+          <div class="contact-item">
+            <i class="contact-icon">📍</i>
+            <p>São Paulo, Brasil</p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/wagnerchr"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/wagnerchristos/"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                alt="LinkedIn"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2023 Wagner Christos. Todos os direitos reservados.</p>
+    </footer>
+    <!-- Elementos de tradução ocultos mas mantidos para compatibilidade com o código -->
+    <div
+      class="translation-loading"
+      id="translation-loading"
+      style="display: none"
+    >
+      <div class="spinner"></div>
+    </div>
+    <div
+      class="translation-active"
+      id="translation-status"
+      style="display: none"
+    >
+      <span id="translation-language"></span>
+    </div>
+    <script src="index.js"></script>
+    <script src="translate.js"></script>
+    <script>
+      /**
+       * Carrega o script do Google Translate
+       */
+      function loadTranslateScript() {
+        if (!window.googleTranslateScriptLoaded) {
+          window.googleTranslateScriptLoaded = true;
+
+          // Mostra indicador de carregamento
+          showTranslationLoading();
+
+          // Cria e carrega o script do Google Translate
+          const translateScript = document.createElement("script");
+          translateScript.src =
+            "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+          translateScript.async = true;
+          document.body.appendChild(translateScript);
+        }
+      }
+
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "pt",
+            includedLanguages: "en,es,fr,pt",
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            autoDisplay: false,
+          },
+          "google_translate_element"
+        );
+
+        const savedLanguage = localStorage.getItem("preferredLanguage");
+        if (savedLanguage && savedLanguage !== "pt") {
+          const googleSelect = document.querySelector(".goog-te-combo");
+          if (googleSelect) {
+            googleSelect.value = savedLanguage;
+            googleSelect.dispatchEvent(new Event("change"));
+
+            showTranslationStatus(savedLanguage);
+          }
+          hideTranslationLoading();
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage");
+        if (savedLanguage && savedLanguage !== "pt") {
+          loadTranslateScript();
+        }
+
+        document
+          .querySelector(".close-indicator")
+          ?.addEventListener("click", function (e) {
+            e.stopPropagation();
+            hideTranslationStatus();
+          });
+
+        document
+          .getElementById("translation-status")
+          ?.addEventListener("click", hideTranslationStatus);
+      });
+
+      document
+        .getElementById("language-select")
+        .addEventListener("change", function () {
+          const selectLanguage = this.value;
+
+          if (selectLanguage !== "pt") {
+            if (!window.googleTranslateScriptLoaded) {
+              loadTranslateScript();
+            } else {
+              const googleSelect = document.querySelector(".goog-te-combo");
+              if (googleSelect) {
+                googleSelect.value = selectLanguage;
+                googleSelect.dispatchEvent(new Event("change"));
+              }
+
+              showTranslationStatus(selectLanguage);
+            }
+          } else {
+            const googleSelect = document.querySelector(".goog-te-combo");
+            if (googleSelect) {
+              googleSelect.value = selectLanguage;
+              googleSelect.dispatchEvent(new Event("change"));
+            }
+            hideTranslationStatus();
+          }
+
+          localStorage.setItem("preferredLanguage", selectLanguage);
+        });
+    </script>
+
+    <div id="google_translate_element" style="display: none"></div>
+  </body>
 </html>
